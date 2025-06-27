@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple JS Function Example</title>
+</head>
+<body>
+
+  <h2>Multiply a Number by 2</h2>
+
+  <!-- Input number -->
+  <label>Enter a number:</label>
+  <input type="number" id="inputNumber">
+
+  <!-- Button to calculate -->
+  <button onclick="multiply()">Multiply</button>
+
+  <!-- Output field -->
+  <br><br>
+  <label>Result:</label>
+  <input type="number" id="result" readonly>
+
+  <!-- JS function -->
+  <script>
+    function multiply() {
+      const input = document.getElementById("inputNumber").value;
+      const result = input * 2;
+      document.getElementById("result").value = result;
+    }
+  </script>
+
+</body>
+</html>
