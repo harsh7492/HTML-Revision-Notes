@@ -134,7 +134,7 @@
         function handleAdd() {
             if (count >= 1000) {
                 alert("Maximum limit (1000) reached.");
-                document.getElementById("addInput").value = "";
+                document.getElementById("addInput").value =value;
                 return;
             }
 
@@ -149,7 +149,7 @@
                     updateCounterDisplay();
                 }
             }
-            document.getElementById("addInput").value = "";
+            document.getElementById("addInput").value =value;
         }
 
         function handleSubtract() {
@@ -164,7 +164,7 @@
                     updateCounterDisplay();
                 }
             }
-            document.getElementById("subInput").value = "";
+            document.getElementById("subInput").value =value;
         }
 
         updateCounterDisplay();
